@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Portefølje</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Sander Eibak Kvilesjø</h1>
+      <nav>
+        <ul>
+          <li><a href="#prosjekter">Prosjekter</a></li>
+          <li><a href="#om-meg">Om Meg</a></li>
+          <li><a href="#cv">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <h2>Hei! Jeg er Sander Eibak Kvilesjø</h2>
+      <p style="text-align: center">
+        Jeg har gåt 1im og kan kode nettsider etter ønsker.
+      </p>
+    </section>
+
+    <section id="prosjekter">
+      <h2>Prosjekter</h2>
+
+      <div class="prosjekt">
+        <h3>Registreringsdatabase</h3>
+        <p>En webapp med database hvor brukere kan registrere seg og det lagres på en server. Brukt til å lære backend og databaser.</p>
+        <a href="https://github.com/sanderkvi/database.git">Se prosjekt</a>
+      </div>
+
+      <div class="prosjekt">
+        <h3>GeoQuiz / GeoGuessr-inspirert nettside</h3>
+        <p>En interaktiv nettside hvor brukere gjetter steder basert på bilder. Bruker kart, poengsystem og hint.</p>
+        <a href="https://github.com/sanderkvi/sander-p-ske-qwiz.git">Se prosjekt</a>
+      </div>
+
+      <div class="prosjekt">
+        <h3>Matnettside</h3>
+        <p>En moderne nettside for matinteresserte, med oppskrifter, bilder og brukervennlig design.</p>
+        <a href="https://github.com/sanderkvi/matnettside.git">Se prosjekt</a>
+      </div>
+    </section>
+
+    <section id="om-meg">
+      <h2>Om meg</h2>
+      <p>
+        Jeg er en elev med interesse for frontend-utvikling, UI-design og teknologi generelt.
+      </p>
+      <div class="fun-fact">
+        <p id="fact">Klikk på knappen for en fun fact!</p>
+        <button id="funFactBtn">🔍 Ny fun fact</button>
+      </div>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <ul>
+        <li><strong>Navn:</strong> Sander Eibak Kvilesjø</li>
+        <li><strong>Utdanning:</strong> Bleiker vgs – 2024–2025</li>
+        <li><strong>Ferdigheter:</strong> HTML, CSS, JavaScript, Illustrator, XD, film og bilder</li>
+        <li><strong>Erfaring:</strong> Skoleprosjekter, kundeservice på SSB</li>
+        <li><strong>Kontakt:</strong> kvilesander@gmail.com</li>
+      </ul>
+      <p>
+        <a href="https://drive.google.com/file/d/1NO6_B_xdvqbweTLTSsCb41t2SD8HZDhf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Se CV her
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Sander Kvilesjø</p>
+    </footer>
+
+    <button id="topBtn" title="Til toppen">↑ Til toppen</button>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
