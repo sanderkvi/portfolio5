@@ -9,77 +9,141 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Enkel inline styling for sentrering i denne demoen */
+      .center-text {
+        text-align: center;
+      }
+      #om-meg p {
+        max-width: 600px;
+        margin: 0 auto 1em;
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+      a.github-link {
+        color: #0366d6;
+        text-decoration: none;
+      }
+      a.github-link:hover {
+        text-decoration: underline;
+      }
+      .prosjekt a {
+        display: inline-block;
+        margin-top: 0.5em;
+      }
+    </style>
   </head>
 
   <body>
     <header>
-      <h1>Sander Eibak Kvilesjø</h1>
+      <h1 class="center-text">Sander Eibak Kvilesjø</h1>
       <nav>
-        <ul>
-          <li><a href="#prosjekter">Prosjekter</a></li>
-          <li><a href="#om-meg">Om Meg</a></li>
-          <li><a href="#cv">CV</a></li>
+        <ul class="center-text" style="list-style: none; padding: 0;">
+          <li style="display: inline; margin: 0 1em;">
+            <a href="#prosjekter">Prosjekter</a>
+          </li>
+          <li style="display: inline; margin: 0 1em;">
+            <a href="#om-meg">Om Meg</a>
+          </li>
+          <li style="display: inline; margin: 0 1em;">
+            <a href="#cv">CV</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section class="intro">
+    <section class="intro center-text" style="margin-bottom: 2em;">
       <h2>Hei! Jeg er Sander Eibak Kvilesjø</h2>
-      <p style="text-align: center">
-        Jeg har gåt 1im og kan kode nettsider etter ønsker.
+      <p>
+        Jeg har gått 1 år på medier og kommunikasjon, og kan kode nettsider etter ønsker. 
+        Jeg elsker å kombinere kreativitet med teknologi!
       </p>
     </section>
 
     <section id="prosjekter">
-      <h2>Prosjekter</h2>
+      <h2 class="center-text">Prosjekter</h2>
 
       <div class="prosjekt">
         <h3>Registreringsdatabase</h3>
-        <p>En webapp med database hvor brukere kan registrere seg og det lagres på en server. Brukt til å lære backend og databaser.</p>
-        <a href="https://github.com/sanderkvi/database.git">Se prosjekt</a>
+        <p>
+          En webapp med database hvor brukere kan registrere seg, og data lagres sikkert på en server. 
+          Et prosjekt for å lære backend og databaser.
+        </p>
+        <a
+          href="https://github.com/sanderkvi/database.git"
+          class="github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Se prosjekt på GitHub</a
+        >
       </div>
 
       <div class="prosjekt">
         <h3>GeoQuiz / GeoGuessr-inspirert nettside</h3>
-        <p>En interaktiv nettside hvor brukere gjetter steder basert på bilder. Bruker kart, poengsystem og hint.</p>
-        <a href="https://github.com/sanderkvi/sander-p-ske-qwiz.git">Se prosjekt</a>
+        <p>
+          En interaktiv nettside hvor brukere kan gjette steder basert på bilder. 
+          Inkluderer kart, poengsystem og hint for å gjøre det gøy og lærerikt.
+        </p>
+        <a
+          href="https://github.com/sanderkvi/sander-p-ske-qwiz.git"
+          class="github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Se prosjekt på GitHub</a
+        >
       </div>
 
       <div class="prosjekt">
         <h3>Matnettside</h3>
-        <p>En moderne nettside for matinteresserte, med oppskrifter, bilder og brukervennlig design.</p>
-        <a href="https://github.com/sanderkvi/matnettside.git">Se prosjekt</a>
+        <p>
+          En moderne nettside for matentusiaster med oppskrifter, flotte bilder og brukervennlig design.
+        </p>
+        <a
+          href="https://github.com/sanderkvi/matnettside.git"
+          class="github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Se prosjekt på GitHub</a
+        >
       </div>
     </section>
 
-    <section id="om-meg">
+    <section id="om-meg" class="center-text" style="margin-top: 3em;">
       <h2>Om meg</h2>
       <p>
-        Jeg er en elev med interesse for frontend-utvikling, UI-design og teknologi generelt.
+        Hei! Jeg heter Sander, er en kreativ og teknisk nysgjerrig elev med stor lidenskap for frontend-utvikling, UI-design og digitale medier. 
+        Når jeg ikke koder, liker jeg å eksperimentere med foto, video og grafisk design – og jeg tror det beste resultatet kommer når kreativitet og teknologi møtes!
       </p>
-      <div class="fun-fact">
+      <p>
+        Jeg har gått medier og kommunikasjon i ett år, hvor jeg har fått jobbe med både filmproduksjon, bildebehandling og webdesign. 
+        Jeg er alltid klar for en ny utfordring, og elsker å lære nye ting.
+      </p>
+      <div class="fun-fact" style="margin-top: 2em;">
         <p id="fact">Klikk på knappen for en fun fact!</p>
         <button id="funFactBtn">🔍 Ny fun fact</button>
       </div>
     </section>
 
-    <section id="cv">
-      <h2>CV</h2>
-      <ul>
+    <section id="cv" style="margin-top: 3em;">
+      <h2 class="center-text">CV</h2>
+      <ul style="max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.5;">
         <li><strong>Navn:</strong> Sander Eibak Kvilesjø</li>
-        <li><strong>Utdanning:</strong> Bleiker vgs – 2024–2025</li>
-        <li><strong>Ferdigheter:</strong> HTML, CSS, JavaScript, Illustrator, XD, film og bilder</li>
-        <li><strong>Erfaring:</strong> Skoleprosjekter, kundeservice på SSB</li>
-        <li><strong>Kontakt:</strong> kvilesander@gmail.com</li>
+        <li><strong>Utdanning:</strong> Bleiker videregående skole – 2024–2025 (Medier og kommunikasjon)</li>
+        <li><strong>Ferdigheter:</strong> HTML, CSS, JavaScript, Adobe Illustrator, Adobe XD, filmproduksjon, foto, bildebehandling</li>
+        <li><strong>Erfaring:</strong> Skoleprosjekter innen web og medieproduksjon, kundeservice hos SSB</li>
+        <li><strong>Kontakt:</strong> <a href="mailto:kvilesander@gmail.com">kvilesander@gmail.com</a></li>
       </ul>
-      <p>
-        <a href="https://drive.google.com/file/d/11duIOG09fuo6XUTZ06MHCBZFkqVOi0Xs/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          Se CV her
-        </a>
+      <p class="center-text" style="margin-top: 1em;">
+        <a
+          href="https://drive.google.com/file/d/11duIOG09fuo6XUTZ06MHCBZFkqVOi0Xs/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Se full CV her</a
+        >
       </p>
     </section>
 
-    <footer>
+    <footer class="center-text" style="margin-top: 4em; padding: 1em 0; background-color: #f0f0f0;">
       <p>&copy; 2025 Sander Kvilesjø</p>
     </footer>
 
