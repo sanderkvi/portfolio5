@@ -100,10 +100,15 @@ h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(6px);
+  background-color: #001f3f !important; /* Sørg for at den har farge */
+  color: #fff;
   margin-top: 60px;
+  position: relative; /* For sikkerhets skyld */
+  z-index: 10;
+  /* Fjern eller kommenter ut backdrop-filter hvis den forstyrrer */
+  /* backdrop-filter: blur(6px); */
 }
+  
 
 a {
   color: #00d4ff;
